@@ -16,10 +16,14 @@
       <input type="submit" value="Submit">
     </form>  
     
-    <script>
-function myFunction() {
-  alert("The form was submitted");
-}
+<p id="demo"></p>
+
+<script>
+let text = "Visit W3Schools";
+let pattern = /w3schools/i;
+let result = text.match(pattern);
+
+document.getElementById("demo").innerHTML = result;
 </script>
   </body>
 </html>
